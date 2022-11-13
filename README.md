@@ -1,4 +1,11 @@
 # Getting Started with Create React App
+Link of this project-https://google-clone-six-blue.vercel.app/
+ this is a google clone project
+ made by using ReactJS,Tailwind Css, google search api
+ the project is still in progress,will add new feautres soon.
+ sometime u may find some delay as the no. of request through api are limited
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
