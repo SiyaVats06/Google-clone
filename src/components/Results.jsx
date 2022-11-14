@@ -9,8 +9,8 @@ export const Results = () => {
   const location = useLocation();
 
 useEffect(() => {
-  getResults(`?q=${searchTerm}`)
-}, [searchTerm])
+  getResults(`?query=${searchTerm}`)
+},[])
 
 
 
@@ -21,11 +21,11 @@ useEffect(() => {
     case '/search':
       return (
         <div className='flex flex-wrap justify-between  space-y-6 sm:px-56'>
-         {results?.data?.organic_results.map(({url,title},index)=>(
+         {results?.items?.map(({link,title},index)=>(
               <div key={index} className="md:w-2/5 w-full">
-                <a href={url} target="_blank" rel="noreferrer">
+                <a href={link} target="_blank" rel="noreferrer">
                  <p className='text-sm'>
-                  {url}
+                  {link}
                  </p>
                  <p className='text-lg hover:underline dark:text-blue-300 text-blue-900 '>
                  {title}
